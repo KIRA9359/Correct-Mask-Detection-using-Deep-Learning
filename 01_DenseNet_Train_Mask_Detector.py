@@ -117,6 +117,7 @@ head_model = Dense(3, activation='softmax')(head_model)
 model = Model(inputs=base_model.input,
               outputs=head_model)
 
+
 # Compile model
 print("compiling model...")
 adam_optimize = Adam(learning_rate=learning_rate)
