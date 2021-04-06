@@ -34,7 +34,7 @@ ap.add_argument("-o", "--output", type=str,
                 help="path to optional output video file")
 ap.add_argument("-m", "--model",
                 type=str,
-                default="DenseNet201_new_mask_detector.model",
+                default="DenseNet201_mask_detector.model",
                 help="path to trained face mask detector model")
 ap.add_argument("-c", "--confidence",
                 type=float,

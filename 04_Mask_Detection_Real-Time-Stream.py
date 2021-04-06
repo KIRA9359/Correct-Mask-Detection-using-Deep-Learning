@@ -31,7 +31,7 @@ ap.add_argument("-f", "--face_detector",
                 help="path to face detector model directory")
 ap.add_argument("-m", "--model",
                 type=str,
-                default='DenseNet201_new_mask_detector.model',
+                default='DenseNet201_mask_detector.model',
                 help="path to trained face mask detector model")
 ap.add_argument("-c", "--confidence",
                 type=float,

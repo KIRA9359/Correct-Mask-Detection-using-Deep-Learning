@@ -32,8 +32,7 @@ for p in physical_devices:
 parser = argparse.ArgumentParser()
 parser.add_argument('-m', '--model',
                     type=str,
-                    default="DenseNet201_new_mask_detector.model",
-                    help="path to output face mask detector model")
+                     help="path to output face mask detector model")
 parser.add_argument("-dataset01", "--train",
                     type=str,
                     default="D:/01_CaoJunhao/Final_Version_Dataset/Train_Dataset")
