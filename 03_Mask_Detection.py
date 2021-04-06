@@ -25,8 +25,12 @@ ap.add_argument("-i2", "--image2",
                 type=str,
                 default='test_image/Junhao_Yuan02.jpg',
                 help="path to input image")
+ap.add_argument("-i3", "--image3",
+                type=str,
+                default='test_image/Junhao.jpg',
+                help="path to input image")
 ap.add_argument("-o", "--output", type=str,
-                default="detection_image_03.png",
+                default="detection_image_04.png",
                 help="path to optional output video file")
 ap.add_argument("-m", "--model",
                 type=str,
@@ -63,7 +67,7 @@ def mask_detection():
     model = load_model(args['model'])
 
     # Loading the image from Mask_ML, and extract its spatial dimensions
-    image = cv2.imread(args['image2'])
+    image = cv2.imread(args['image3'])
     (high, weight) = image.shape[:2]
     print(high)
     print(weight)

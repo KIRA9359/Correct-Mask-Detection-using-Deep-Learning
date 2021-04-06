@@ -47,7 +47,7 @@ print(args)
 # Initializing the learning rate, Batch Size, and Epochs.
 learning_rate = 1e-4
 batch_size = 32
-epochs = 20
+epochs = 25
 
 
 # Loads the dataset and processes it
@@ -108,8 +108,8 @@ for layer in base_model.layers:
 head_model = base_model.output
 head_model = MaxPooling2D(pool_size=(7, 7))(head_model)
 head_model = Flatten(name='flatten')(head_model)
-head_model = Dense(128, activation='relu')(head_model)
 head_model = Dense(64, activation='relu')(head_model)
+head_model = Dense(128, activation='relu')(head_model)
 head_model = Dropout(0.5)(head_model)
 head_model = Dense(3, activation='softmax')(head_model)
 
